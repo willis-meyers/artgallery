@@ -1,14 +1,29 @@
 body {
 	font-family: Helvetica;
 }
+.results {
+	width: 100%;
+}
 
 .event_instance {
 display: inline-block;
-width: 40%;
 float: left;
+padding: 10px;
+width: 20%;
+min-width: 250px;
+text-align: center;
+}
+
+.event_name {
+	display: block;
+	min-width: 250px;
+}
+.location {
+	display: block;
 }
 
 div img {
-	border-radius: 5%;
-	height: 200px;
+	border-radius: 1%;
+	width: 100%;
+	min-width: 250px;
 }

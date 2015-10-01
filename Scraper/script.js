@@ -11,35 +11,46 @@ $(document).ready(function(){
           	var image = results[i].featured_image;
           	var event_name = results[i].featureevent_value;
           	var location = results[i].eventgallery_value;
+          	var link = results[i].featured_link;
+          	var description = results[i].eventexcerpt_description;
 
-          	console.log(image);
-          	console.log(event_name);
-          	console.log(location);
-
-          	createEventDiv(image, event_name, location);
+          	createEventDiv(image, event_name, location, link, description);
           	})(i);
          };
 	});
 
 });
 
-function createEventDiv(image, event_name, location) {
+function createEventDiv(image, event_name, location, link, description) {
 
 outerDiv = document.createElement("div");
 outerDiv.className = "event_instance";
 console.log(outerDiv);
 
 innerImgDiv = document.createElement("div");
+innerImgDiv.className = "event_image";
 innerEventNameDiv = document.createElement("div");
+innerEventNameDiv.className = "event_name";
+innerDescriptionDiv = document.createElement("div");
+innerDescriptionDiv.className = "event_description";
+
+innerEventNameA = document.createElement("a");
+innerEventNameDiv.appendChild(innerEventNameA);
+
 innerLocationDiv = document.createElement("div");
+innerLocationDiv.className = "location";
 outerDiv.appendChild(innerEventNameDiv);
 outerDiv.appendChild(innerLocationDiv);
 outerDiv.appendChild(innerImgDiv);
+outerDiv.appendChild(innerDescriptionDiv);
 imgEl = document.createElement("img");
 imgEl.src = image;
 innerImgDiv.appendChild(imgEl);
-innerEventNameDiv.innerText = event_name;
-innerLocationDiv.innerText = location;
+
+innerEventNameA.href = link;
+innerEventNameA.innerText = event_name;
+innerLocationDiv.innerText = "Where: "+location;
+innerDescriptionDiv.innerText = description;
 console.log(outerDiv);
 
 resultsDiv = document.getElementsByClassName("results");
