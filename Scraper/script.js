@@ -5,22 +5,43 @@ $(document).ready(function(){
 		var returnedEvents = data;
 		results = returnedEvents.results;
 		console.log(results);
-			$( "div.event-1" ).text( "Event: "+results[0].featureevent_value);
-			$( "div.date-1" ).text( "Date: "+results[0].eventdates_value);
-			$( "div.location-1" ).text( "Location: "+results[0].eventgallery_value);
-			$( "img.image-1" ).attr("src", results[0].featured_image);
 
-			$( "div.event-2" ).text( "Event: "+results[1].featureevent_value);
-			$( "div.date-2" ).text( "Date: "+results[1].eventdates_value);
-			$( "div.location-2" ).text( "Location: "+results[1].eventgallery_value);
-			$( "img.image-2" ).attr("src", results[1].featured_image);
+		for (var i = 0; i <results.length; i++) {
+          (function() {
+          	var image = results[i].featured_image;
+          	var event_name = results[i].featureevent_value;
+          	var location = results[i].eventgallery_value;
 
+          	console.log(image);
+          	console.log(event_name);
+          	console.log(location);
 
-			$( "div.event-3" ).text( "Event: "+results[2].featureevent_value);
-			$( "div.date-3" ).text( "Date: "+results[2].eventdates_value);
-			$( "div.location-3" ).text( "Location: "+results[2].eventgallery_value);
-			$( "img.image-3" ).attr("src", results[2].featured_image);
+          	createEventDiv(image, event_name, location);
+          	})(i);
+         };
 	});
 
 });
 
+function createEventDiv(image, event_name, location) {
+
+outerDiv = document.createElement("div");
+outerDiv.className = "event_instance";
+console.log(outerDiv);
+
+innerImgDiv = document.createElement("div");
+innerEventNameDiv = document.createElement("div");
+innerLocationDiv = document.createElement("div");
+outerDiv.appendChild(innerEventNameDiv);
+outerDiv.appendChild(innerLocationDiv);
+outerDiv.appendChild(innerImgDiv);
+imgEl = document.createElement("img");
+imgEl.src = image;
+innerImgDiv.appendChild(imgEl);
+innerEventNameDiv.innerText = event_name;
+innerLocationDiv.innerText = location;
+console.log(outerDiv);
+
+resultsDiv = document.getElementsByClassName("results");
+resultsDiv[0].appendChild(outerDiv);
+}

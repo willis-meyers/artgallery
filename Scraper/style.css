@@ -1,0 +1,14 @@
+body {
+	font-family: Helvetica;
+}
+
+.event_instance {
+display: inline-block;
+width: 40%;
+float: left;
+}
+
+div img {
+	border-radius: 5%;
+	height: 200px;
+}
