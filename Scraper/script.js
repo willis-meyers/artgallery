@@ -6,7 +6,7 @@ $(document).ready(function(){
 		results = returnedEvents.results;
 		console.log(results);
 
-		for (var i = 0; i <results.length; i++) {
+		for (var i = 0; i <8; i++) {
           (function() {
           	var image = results[i].featured_image;
           	var event_name = results[i].featureevent_value;
