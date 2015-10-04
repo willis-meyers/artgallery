@@ -24,13 +24,13 @@ $(document).ready(function(){
 function createEventDiv(image, event_name, location, link, description) {
 
 outerDiv = document.createElement("div");
-outerDiv.className = "event_instance";
+outerDiv.className = "col-sm-6 col-md-4";
 console.log(outerDiv);
 
 innerImgDiv = document.createElement("div");
-innerImgDiv.className = "event_image";
+innerImgDiv.className = "thumbnail";
 innerEventNameDiv = document.createElement("div");
-innerEventNameDiv.className = "event_name";
+innerEventNameDiv.className = "caption";
 innerDescriptionDiv = document.createElement("div");
 innerDescriptionDiv.className = "event_description";
 
