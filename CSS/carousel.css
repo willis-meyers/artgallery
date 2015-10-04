@@ -41,12 +41,14 @@ body {
 .carousel {
   height: 500px;
   margin-bottom: 60px;
+
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
   text-align: left;
   margin-left: 0;
+  padding-left: 0;
 }
 
 /* Declare heights because of positioning of img element */
@@ -124,6 +126,7 @@ body {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
+    
   }
 
   .featurette-heading {
