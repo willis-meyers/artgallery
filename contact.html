@@ -43,8 +43,8 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li>     </li>
-                <li><a href="index.html#archive">Archive</a></li>
-                <li><a href="index.html#oaklandevents">Oakland Events</a></li>
+                <li><a href="index.html#archive" target="_blank">Archive</a></li>
+                <li><a href="index.html#oaklandevents" target="_blank">Oakland Events</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
               </ul>
             </div>
@@ -56,11 +56,20 @@
 
     
 <!-- START THE CONTACT FORM AND MAPS -->
+
+        <!-- Added by Willis to stop overflow into navbar -->
+
+        <div class="col-md-5">
+        <div class="container">    
+        <div class="row" style="text-align:center; border-bottom:1px dashed #ccc;  padding:0 0 20px 0; margin-bottom:40px;">
+        </div>
+        <!-- Finished -->
+
   <div class="container marketing" id="current">
 
       <div class="row featurette" id="oaklandevents">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Check Out Our Contact Form. <span class="text-muted">There's a lot going on.</span></h2>
+          <h2 class="featurette-heading">Check Out Our Contact Form. <span class="text-muted">Keep in touch!</span></h2>
         
         <ul class="contactdivs">
           
@@ -87,7 +96,7 @@
                  <input type="text" name="email" id="email" required/>         
               </p>  
               <p class="message"> 
-                <label for="message">Message:</label>
+                <label for="message"></label>
                 <textarea name="text" placeholder= "Message" required></textarea > 
               </p>  
               <p class="submit"> 

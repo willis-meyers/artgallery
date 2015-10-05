@@ -38,6 +38,7 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
+
 .carousel {
   height: 500px;
   margin-bottom: 60px;
@@ -49,6 +50,7 @@ body {
   text-align: left;
   margin-left: 0;
   padding-left: 0;
+  color: #333;
 }
 
 /* Declare heights because of positioning of img element */
@@ -93,6 +95,13 @@ body {
 
 /* Thin out the marketing headings */
 .featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* Spacing for contact form heading */
+.featurette-heading-contact {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
