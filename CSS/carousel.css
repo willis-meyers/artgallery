@@ -42,18 +42,67 @@ body {
 }
 
 
+/* NEW CAROUSEL
+-------------------------------------------------- */
+#wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+
+#slider {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 9600px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 1920px;
+    height: 600px;
+}
+
+#slider-text {
+    position: absolute; 
+   top: 100px; 
+   left: 0px; 
+   width: 600px; 
+    color: #333;   
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(255, 255, 255, 0.9);
+   padding:15px 15px 15px 40px;
+}
+
+
+}
+/* helper css, since we don't have images 
+.slide1 {background: red;}
+
+
 
 /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
+-------------------------------------------------- 
 
-/* Carousel base class */
+/* Carousel base class 
 
 .carousel {
   height: 500px;
   margin-bottom: 60px;
 
 }
-/* Since positioning the image, we need to help out the caption */
+/* Since positioning the image, we need to help out the caption 
 .carousel-caption {
   z-index: 10;
   text-align: left;
@@ -62,7 +111,7 @@ body {
   color: #333;
 }
 
-/* Declare heights because of positioning of img element */
+/* Declare heights because of positioning of img element 
 .carousel .item {
   height: 500px;
   background-color: #777;
@@ -114,17 +163,32 @@ body {
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4;
-  }
+
 
   .featurette-heading {
     font-size: 50px;
   }
+  
+  #slider-text {
+    font-size: 18px;
+  }
+
+  
+  #slider  {
+    height: 700px; 
+    
 }
+}
+
+@media (max-width: 768px) {
+  #slider-text {
+    position: absolute; 
+   top: 75px; 
+   left: 0px; 
+   width: 100%;
+   padding:5px 15px 15px 20px;
+   }
+  }
 
 @media (min-width: 992px) {
   .featurette-heading {
@@ -132,6 +196,10 @@ body {
   }
 }
 
+@media (min-width: 414px){
+ 
+
+}
 /* Willis removing floating nav bar
 -------------------------------------------------- 
 
