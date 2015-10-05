@@ -1,32 +1,60 @@
-/*00 BASE STYLES 
------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-/*----------------------------------------------------------------------------- 
-=01 NAV BAR 
------------------------------------------------------------------------------*/
-.navbar-header {
-	width:100%;
-}
-
-.active {
-	text-align: right;
-}
 
 /*----------------------------------------------------------------------------- 
 Original Image from aggregatespace.com
 -----------------------------------------------------------------------------*/
 
+html {
+	margin: 0;
+	padding: 0;
+}
 
-#supersized-loader { position:absolute; top:50%; left:50%; z-index:10; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background-color:#111; background:rgba(0,0,0,0.8) url(imgages/progress.gif) no-repeat center center; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
 
-#supersized { position:fixed; left:0; top:0; overflow:hidden; z-index:-999; height:100%; width:100%; }
-#supersized img{ height:auto; width:auto; position:relative; outline:none; border:none; -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }
+img {
+	border:none;
+}
+
+#supersized-loader { 
+	position:absolute; 
+	top:50%; 
+	left:50%; 
+	z-index:10; 
+	width:60px; 
+	height:60px; 
+	margin:-30px 0 0 -30px; 
+	text-indent:-999em; 
+	background-color:#111; 
+	background:rgba(0,0,0,0.8) 
+	url(images/progress.gif) 
+	no-repeat center center; 
+	-webkit-border-radius:5px; 
+	-moz-border-radius:5px; 
+	border-radius:5px;
+}
+
+#supersized { 
+	position:fixed; 
+	left:0; 
+	top:0; 
+	overflow:hidden; 
+	z-index:-999; 
+	height:100%; 
+	width:100%; 
+}
+
+#supersized img{ 
+	height:auto; 
+	width:auto; 
+	position:relative; 
+	outline:none; 
+	border:none; 
+	-ms-interpolation-mode:bicubic; 
+	image-rendering: optimizeQuality; 
+}
 
 #content {
 	width: 540px;
@@ -35,4 +63,36 @@ Original Image from aggregatespace.com
 	color: #222;
 	background: url('/img/background-white_84.png');
 }
+
+
+a {
+	color: #222;
+}
+
+h1 {
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 45px;
+}
+h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 27px;
+}
+
+p { font-size: 13px; }
+
+p.credit { font-size: 11px; color: #AAA; }
+
+
+
+
+
+
 
