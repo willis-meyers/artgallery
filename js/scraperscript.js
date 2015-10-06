@@ -29,9 +29,9 @@ console.log(outerDiv);
 
 innerImgDiv = document.createElement("div");
 innerImgDiv.className = "thumbnail";
-innerEventNameDiv = document.createElement("div");
+innerEventNameDiv = document.createElement("h3");
 innerEventNameDiv.className = "caption";
-innerDescriptionDiv = document.createElement("div");
+innerDescriptionDiv = document.createElement("p");
 innerDescriptionDiv.className = "event_description";
 
 innerEventNameA = document.createElement("a");
@@ -40,8 +40,8 @@ innerEventNameDiv.appendChild(innerEventNameA);
 innerLocationDiv = document.createElement("div");
 innerLocationDiv.className = "location";
 outerDiv.appendChild(innerEventNameDiv);
-outerDiv.appendChild(innerLocationDiv);
 outerDiv.appendChild(innerImgDiv);
+outerDiv.appendChild(innerLocationDiv);
 outerDiv.appendChild(innerDescriptionDiv);
 imgEl = document.createElement("img");
 imgEl.src = image;
