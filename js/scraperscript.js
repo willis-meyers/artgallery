@@ -6,7 +6,7 @@ $(document).ready(function(){
 		results = returnedEvents.results;
 		console.log(results);
 
-		for (var i = 0; i <6; i++) {
+		for (var i = 0; i <8; i++) {
           (function() {
           	var image = results[i].featured_image;
           	var event_name = results[i].featureevent_value;
@@ -33,6 +33,9 @@ innerEventNameDiv = document.createElement("h3");
 innerEventNameDiv.className = "caption";
 innerDescriptionDiv = document.createElement("p");
 innerDescriptionDiv.className = "event_description";
+moreLink = document.createElement("a");
+moreLink.href = link;
+moreLink.innerText = "more>>";
 
 innerEventNameA = document.createElement("a");
 innerEventNameDiv.appendChild(innerEventNameA);
@@ -40,10 +43,14 @@ innerEventNameDiv.appendChild(innerEventNameA);
 innerLocationDiv = document.createElement("div");
 innerLocationDiv.className = "location";
 outerDiv.appendChild(innerImgDiv);
+imgElA = document.createElement("a");
 imgEl = document.createElement("img");
 imgEl.className = "scraperimage";
 imgEl.src = image;
-innerImgDiv.appendChild(imgEl);
+innerImgDiv.appendChild(imgElA);
+imgElA.href = link;
+console.log(imgElA);
+imgElA.appendChild(imgEl);
 innerImgDiv.appendChild(innerEventNameDiv);
 innerImgDiv.appendChild(innerLocationDiv);
 innerImgDiv.appendChild(innerDescriptionDiv);
@@ -52,6 +59,7 @@ innerEventNameA.href = link;
 innerEventNameA.innerText = event_name;
 innerLocationDiv.innerText = "Where: "+location;
 innerDescriptionDiv.innerText = description;
+innerDescriptionDiv.appendChild(moreLink);
 console.log(outerDiv);
 
 resultsDiv = document.getElementsByClassName("results");
