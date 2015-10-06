@@ -6,7 +6,7 @@ $(document).ready(function(){
 		results = returnedEvents.results;
 		console.log(results);
 
-		for (var i = 0; i <8; i++) {
+		for (var i = 0; i <6; i++) {
           (function() {
           	var image = results[i].featured_image;
           	var event_name = results[i].featureevent_value;
@@ -24,7 +24,7 @@ $(document).ready(function(){
 function createEventDiv(image, event_name, location, link, description) {
 
 outerDiv = document.createElement("div");
-outerDiv.className = "col-sm-6 col-md-4";
+outerDiv.className = "col-xs-6 col-md-3";
 console.log(outerDiv);
 
 innerImgDiv = document.createElement("div");
@@ -39,13 +39,14 @@ innerEventNameDiv.appendChild(innerEventNameA);
 
 innerLocationDiv = document.createElement("div");
 innerLocationDiv.className = "location";
-outerDiv.appendChild(innerEventNameDiv);
 outerDiv.appendChild(innerImgDiv);
-outerDiv.appendChild(innerLocationDiv);
-outerDiv.appendChild(innerDescriptionDiv);
 imgEl = document.createElement("img");
+imgEl.className = "scraperimage";
 imgEl.src = image;
 innerImgDiv.appendChild(imgEl);
+innerImgDiv.appendChild(innerEventNameDiv);
+innerImgDiv.appendChild(innerLocationDiv);
+innerImgDiv.appendChild(innerDescriptionDiv);
 
 innerEventNameA.href = link;
 innerEventNameA.innerText = event_name;
