@@ -1,0 +1,259 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+}
+html {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+img {
+  border:none;
+}
+
+
+}
+a {
+  color: #222;
+}
+
+
+li{
+  list-style: none;
+}
+
+.containermarketing{
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+.navbar-wrapper .navbar ul li{
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: right;
+
+}
+
+/*----------------------------------------------------------------------------- 
+CONTACT FORM
+-----------------------------------------------------------------------------*/
+
+.form {
+background: white;
+}
+
+.container {
+  
+}
+
+.contactmain {
+
+  background:white;
+  position: fixed;
+  border: 1px solid #C0C0C0;
+    padding: 8px;
+    max-width: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 25px;
+}
+
+input, textarea { 
+    padding: 9px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    width: 200px; 
+    background: #FFFFFF; 
+} 
+   
+textarea { 
+    width: 400px; 
+    max-width: 400px; 
+    height: 100px; 
+    line-height: 150%; 
+    } 
+   
+.form label { 
+    margin-left: 10px; 
+    color: #999999; 
+    } 
+
+.submit input { 
+    width: auto; 
+    padding: 9px 15px; 
+    background:#C0C0C0; 
+    border: 15px; 
+    font-size: 14px; 
+    color:#FFFFFF; 
+    }
+
+/*----------------------------------------------------------------------------- 
+MAP 
+-----------------------------------------------------------------------------*/
+.map{
+  margin:25px 0px 0px 30px;
+  left: 0px; 
+  border: 0px none; 
+  position: relative; 
+  float:right;
+  overflow: hidden; 
+
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+  
+  #slider-text {
+    font-size: 18px;
+  }
+
+  
+  #slider  {
+    height: 700px; 
+    
+}
+}
+
+@media (max-width: 768px) {
+  #slider-text {
+    position: absolute; 
+   top: 75px; 
+   left: 0px; 
+   width: 100%;
+   padding:5px 15px 15px 20px;
+   }
+  }
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 414px){
+ 
+
+}
+
+/**********************************
+PAGE: PORTFOLIO
+***********************************/
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#gallery li {
+  float: left;
+  padding: 0%;
+  padding: 0%;
+  margin: 1%;
+  max-width: 100%;
+  display: block;
+}
+
+#gallerywrapper {
+  max-width: 100%;
+  margin: 10 auto;
+  padding: 0 1%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  
+  /**********************************
+  Mobile PORTFOLIO
+  ***********************************/
+  #gallery li {
+    width: 98%;
+  }
+  #gallery li a p {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1023px){
+  
+  /**********************************
+  tablet PORTFOLIO 
+  ***********************************/
+  #gallery li {
+    width: 48%;
+    
+  }
+
+  #gallery li a p {
+    width: 48%;
+  }
+
+  #gallery li:nth-child(3n){
+    clear:left;
+  }
+
+
+@media screen and (min-width: 1024px) and (max-width: 1920px){
+  
+  /**********************************
+  PAGE PORTFOLIO
+  ***********************************/
+  #gallery li {
+    width: 31.3333%;
+    
+  }
+
+  #gallery li a p {
+    width: 31.3333%;
+  }
+
+  #gallery li:nth-child(4n){
+    clear:left;
+  }
+
