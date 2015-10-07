@@ -24,7 +24,7 @@ $(document).ready(function(){
 function createEventDiv(image, event_name, location, link, description) {
 
 outerDiv = document.createElement("div");
-outerDiv.className = "col-sm-6 col-md-4";
+outerDiv.className = "col-xs-6 col-md-3";
 console.log(outerDiv);
 
 innerImgDiv = document.createElement("div");
@@ -33,24 +33,33 @@ innerEventNameDiv = document.createElement("h3");
 innerEventNameDiv.className = "caption";
 innerDescriptionDiv = document.createElement("p");
 innerDescriptionDiv.className = "event_description";
+moreLink = document.createElement("a");
+moreLink.href = link;
+moreLink.innerText = "more>>";
 
 innerEventNameA = document.createElement("a");
 innerEventNameDiv.appendChild(innerEventNameA);
 
 innerLocationDiv = document.createElement("div");
 innerLocationDiv.className = "location";
-outerDiv.appendChild(innerEventNameDiv);
 outerDiv.appendChild(innerImgDiv);
-outerDiv.appendChild(innerLocationDiv);
-outerDiv.appendChild(innerDescriptionDiv);
+imgElA = document.createElement("a");
 imgEl = document.createElement("img");
+imgEl.className = "scraperimage";
 imgEl.src = image;
-innerImgDiv.appendChild(imgEl);
+innerImgDiv.appendChild(imgElA);
+imgElA.href = link;
+console.log(imgElA);
+imgElA.appendChild(imgEl);
+innerImgDiv.appendChild(innerEventNameDiv);
+innerImgDiv.appendChild(innerLocationDiv);
+innerImgDiv.appendChild(innerDescriptionDiv);
 
 innerEventNameA.href = link;
 innerEventNameA.innerText = event_name;
 innerLocationDiv.innerText = "Where: "+location;
 innerDescriptionDiv.innerText = description;
+innerDescriptionDiv.appendChild(moreLink);
 console.log(outerDiv);
 
 resultsDiv = document.getElementsByClassName("results");

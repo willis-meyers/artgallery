@@ -99,40 +99,8 @@ body {
 .slide1 {background: red;}
 
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- 
-
-/* Carousel base class 
-
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-
-}
-/* Since positioning the image, we need to help out the caption 
-.carousel-caption {
-  z-index: 10;
-  text-align: left;
-  margin-left: 0;
-  padding-left: 0;
-  color: #333;
-}
-
-/* Declare heights because of positioning of img element 
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner .item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  max-width: none;
-  height: 500px;
-
-}
+/* CUSTOMIZE THE CONTACT PAGE
+-------------------------------------------------- */
 
 
 /* MARKETING CONTENT
@@ -156,7 +124,7 @@ body {
 ------------------------- */
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 50px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -200,7 +168,7 @@ body {
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px;
+    margin-top: 30px;
   }
 }
 
@@ -231,3 +199,39 @@ body {
   }
 End
 -------------------------------------------------- */
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- 
+
+/* Carousel base class 
+
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+
+}
+/* Since positioning the image, we need to help out the caption 
+.carousel-caption {
+  z-index: 10;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  color: #333;
+}
+
+/* Declare heights because of positioning of img element 
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-width: none;
+  height: 500px;
+
+}
+
