@@ -48,7 +48,21 @@ body {
   text-align: right;
 
 }
-
+/* GOOGLE MAPS
+-------------------------------------------------- */
+    .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
 
 /* NEW CAROUSEL
 -------------------------------------------------- */
@@ -57,9 +71,8 @@ body {
   margin: 0 auto;
   padding: 0;
   position: relative; 
-   width: 100%; /* for IE 6 */
+  width: 100%; /* for IE 6 */
 }
-
 
 #slider {
     width: 100%;
