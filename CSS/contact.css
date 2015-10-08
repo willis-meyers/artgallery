@@ -2,6 +2,8 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+
+
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -75,27 +77,20 @@ li{
 /*----------------------------------------------------------------------------- 
 CONTACT FORM
 -----------------------------------------------------------------------------*/
-
-.form {
-background: white;
-}
-
-.container {
-  
-}
+.columnsContainer{ position: relative; margin: .5em; }
 
 .contactmain {
-
   background:white;
-  position: fixed;
   border: 1px solid #C0C0C0;
+  position: relative;
+  float: left;
     padding: 8px;
     max-width: 500px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-left: 250px;
-    margin-right: 250px;
     margin-top: 25px;
+    margin-bottom: .5em; 
+
 }
 
 input, textarea { 
@@ -112,11 +107,6 @@ textarea {
     height: 100px; 
     line-height: 150%; 
     } 
-   
-.form label { 
-    margin-left: 10px; 
-    color: #999999; 
-    } 
 
 .submit input { 
     width: auto; 
@@ -131,12 +121,11 @@ textarea {
 MAP 
 -----------------------------------------------------------------------------*/
 .map{
-  margin:25px 0px 0px 30px;
-  left: 0px; 
-  border: 0px none; 
-  position: relative; 
-  float:right;
-  overflow: hidden; 
+    position: relative; 
+    margin-top: 25px;
+    border: 0px none; 
+    padding: 8px;
+    float:right;
 
 }
 
@@ -158,7 +147,10 @@ MAP
   #slider  {
     height: 700px; 
     
-}
+  }
+
+  .map { 
+    
 }
 
 @media (max-width: 768px) {
@@ -169,91 +161,31 @@ MAP
    width: 100%;
    padding:5px 15px 15px 20px;
    }
+   .map{
+    width: 275px; 
+    height: 200px;
+  }
   }
 
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 414px){
- 
-
-}
-
-/**********************************
-PAGE: PORTFOLIO
-***********************************/
-
-#gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#gallery li {
-  float: left;
-  padding: 0%;
-  padding: 0%;
-  margin: 1%;
-  max-width: 100%;
-  display: block;
-}
-
-#gallerywrapper {
-  max-width: 100%;
-  margin: 10 auto;
-  padding: 0 1%;
-}
-
-@media screen and (min-width: 320px) and (max-width: 479px) {
-  
-  /**********************************
-  Mobile PORTFOLIO
-  ***********************************/
-  #gallery li {
-    width: 98%;
-  }
-  #gallery li a p {
-    width: 98%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1023px){
-  
-  /**********************************
-  tablet PORTFOLIO 
-  ***********************************/
-  #gallery li {
-    width: 48%;
-    
-  }
-
-  #gallery li a p {
-    width: 48%;
-  }
-
-  #gallery li:nth-child(3n){
-    clear:left;
+    margin-top: 30px;}
   }
 
 
-@media screen and (min-width: 1024px) and (max-width: 1920px){
-  
-  /**********************************
-  PAGE PORTFOLIO
-  ***********************************/
-  #gallery li {
-    width: 31.3333%;
-    
-  }
 
-  #gallery li a p {
-    width: 31.3333%;
-  }
 
-  #gallery li:nth-child(4n){
-    clear:left;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
