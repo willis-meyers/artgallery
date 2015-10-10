@@ -76,7 +76,6 @@ li{
 /*----------------------------------------------------------------------------- 
 =02 CONTACT
 -----------------------------------------------------------------------------*/
-
 .form {
   background: white;
   padding-left: 5px;
@@ -97,7 +96,7 @@ li{
 }
 
 input, textarea { 
-    padding: 9px; 
+    padding: 4px; 
     border: solid 1px #E5E5E5; 
     outline: 0; 
     width: 92%; 
@@ -106,25 +105,26 @@ input, textarea {
 } 
    
 textarea { 
-    width: 90%; 
-    max-width: 90%; 
+    width: 89%; 
+    max-width: 89%; 
     height: 100px; 
     line-height: 150%; 
-    } 
+} 
    
 .form label { 
     margin-left: 10px; 
     color: #999999; 
-    } 
+} 
 
 .submit input { 
-    width: auto; 
-    padding: 9px 15px; 
-    background:#C0C0C0; 
-    border: 15px; 
-    font-size: 10px; 
-    color:#FFFFFF; 
-    }
+    width: auto;
+    padding: 5px 10px;
+    background:#333333;
+    border: 15px;
+    font-size: 12px;
+    color:#FFFFFF;
+    border-radius: 5%;
+}
 
 /*----------------------------------------------------------------------------- 
 CONTACT FORM
