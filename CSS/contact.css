@@ -120,6 +120,27 @@ textarea {
 }
 
 /*----------------------------------------------------------------------------- 
+=03 ADDRESS DIV
+-----------------------------------------------------------------------------*/
+.col-sm-4 h5 {
+    margin: 0px;
+    margin-right: 20%;
+    margin-left: 20%;
+
+}
+.col-sm-4 h5 p{
+    font-weight: bolder;
+    margin-top: 50%;
+}
+
+.col-sm-4 a{
+   margin-right: 20%;
+    margin-left: 20%;
+    color:#3b5998;
+    text-decoration: underline;
+}
+
+/*----------------------------------------------------------------------------- 
 CONTACT FORM
 -----------------------------------------------------------------------------*/
 /*.columnsContainer{ position: relative; margin: .5em; }
