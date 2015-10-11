@@ -1,9 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
-
-
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -12,20 +9,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
   
-}
 html {
   margin: 0;
   padding: 0;
 
 }
 
-
 img {
   border:none;
 }
 
-
-}
 a {
   color: #222;
 }
@@ -76,7 +69,6 @@ li{
 /*----------------------------------------------------------------------------- 
 =02 CONTACT
 -----------------------------------------------------------------------------*/
-
 .form {
   background: white;
   padding-left: 5px;
@@ -97,7 +89,7 @@ li{
 }
 
 input, textarea { 
-    padding: 9px; 
+    padding: 4px; 
     border: solid 1px #E5E5E5; 
     outline: 0; 
     width: 92%; 
@@ -106,25 +98,47 @@ input, textarea {
 } 
    
 textarea { 
-    width: 90%; 
-    max-width: 90%; 
+    width: 89%; 
+    max-width: 89%; 
     height: 100px; 
     line-height: 150%; 
-    } 
+} 
    
 .form label { 
     margin-left: 10px; 
     color: #999999; 
-    } 
+} 
 
 .submit input { 
-    width: auto; 
-    padding: 9px 15px; 
-    background:#C0C0C0; 
-    border: 15px; 
-    font-size: 10px; 
-    color:#FFFFFF; 
-    }
+    width: auto;
+    padding: 5px 10px;
+    background:#333333;
+    border: 15px;
+    font-size: 12px;
+    color:#FFFFFF;
+    border-radius: 5%;
+}
+
+/*----------------------------------------------------------------------------- 
+=03 ADDRESS DIV
+-----------------------------------------------------------------------------*/
+.col-sm-4 h5 {
+    margin: 0px;
+    margin-right: 20%;
+    margin-left: 20%;
+
+}
+.col-sm-4 h5 p{
+    font-weight: bolder;
+
+}
+
+.col-sm-4 a{
+   margin-right: 20%;
+    margin-left: 20%;
+    color:#3b5998;
+    text-decoration: underline;
+}
 
 /*----------------------------------------------------------------------------- 
 CONTACT FORM
