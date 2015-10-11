@@ -1,9 +1,6 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
-
-
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
@@ -12,20 +9,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
   
-}
 html {
   margin: 0;
   padding: 0;
 
 }
 
-
 img {
   border:none;
 }
 
-
-}
 a {
   color: #222;
 }
