@@ -6,7 +6,7 @@ ul {
           list-style:none;
           margin-bottom:25px;           
       }
-      ul li img {
+      #archive ul li img {
           cursor: pointer;
       }
       .modal-body {
@@ -19,14 +19,14 @@ ul {
           text-align:center;
           margin:0 auto;
       }
-    .controls{          
+    #archive .controls{          
         width:50px;
         display:block;
         font-size:11px;
         padding-top:8px;
         font-weight:bold;          
     }
-    .next {
+    #archive .next {
         float:right;
         text-align:right;
     }
