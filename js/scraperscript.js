@@ -6,22 +6,23 @@ $(document).ready(function(){
 		results = returnedEvents.results;
 		console.log(results);
 
-		for (var i = 0; i <8; i++) {
+		for (var i = 0; i <results.length; i++) {
           (function() {
           	var image = results[i].featured_image;
           	var event_name = results[i].featureevent_value;
           	var location = results[i].eventgallery_value;
           	var link = results[i].featured_link;
           	var description = results[i].eventexcerpt_description;
+            var event_date = results[i].eventdates_value;
 
-          	createEventDiv(image, event_name, location, link, description);
+          	createEventDiv(image, event_name, location, link, description, event_date);
           	})(i);
          };
 	});
 
 });
 
-function createEventDiv(image, event_name, location, link, description) {
+function createEventDiv(image, event_name, location, link, description, event_date) {
 
 outerDiv = document.createElement("div");
 outerDiv.className = "col-xs-6 col-md-3";
@@ -33,9 +34,13 @@ innerEventNameDiv = document.createElement("h3");
 innerEventNameDiv.className = "caption";
 innerDescriptionDiv = document.createElement("p");
 innerDescriptionDiv.className = "event_description";
+
+innerDateDiv = document.createElement("p");
+innerDateDiv.className = "event_date";
+
 moreLink = document.createElement("a");
 moreLink.href = link;
-moreLink.innerText = "more>>";
+moreLink.innerText = "more";
 
 innerEventNameA = document.createElement("a");
 innerEventNameDiv.appendChild(innerEventNameA);
@@ -53,11 +58,14 @@ console.log(imgElA);
 imgElA.appendChild(imgEl);
 innerImgDiv.appendChild(innerEventNameDiv);
 innerImgDiv.appendChild(innerLocationDiv);
-innerImgDiv.appendChild(innerDescriptionDiv);
+innerImgDiv.appendChild(innerDateDiv);
+// innerImgDiv.appendChild(innerDescriptionDiv);
+
 
 innerEventNameA.href = link;
 innerEventNameA.innerText = event_name;
 innerLocationDiv.innerText = "Where: "+location;
+innerDateDiv.innerText = "Date: "+event_date;
 innerDescriptionDiv.innerText = description;
 innerDescriptionDiv.appendChild(moreLink);
 console.log(outerDiv);
