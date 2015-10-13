@@ -19,6 +19,6 @@
 - BUILT ON BOOTSTRAP: http://getbootstrap.com/examples/carousel/
 - ARCHIVE: http://michaelsoriano.com/next-and-previous-buttons-bootstrap-photo-gallery/
 - SLIDER: http://jsfiddle.net/EjZzs/15/
-- SCRAPE: Oakland Art events are pulled dynamically from http://oaklandartmurmur.org/exhibitions/ page with the use of jquery and import.io service that transforms the website content into a JSON object.
+- SCRAPE: Oakland Art events at http://oaklandartmurmur.org/exhibitions/, jquery and https://import.io (transforms website into a JSON API).
 - CONTACT: formspree.io
 - Font Awesome for fonts and icons: https://fortawesome.github.io/Font-Awesome/
