@@ -11,29 +11,39 @@ body {
 display: inline-block;
 float: left;
 width: 20%;
-padding-left: 50px;
+padding-left: 20px;
 padding-top: 30px;
 }
 
 .event_name {
 	display: block;
-	min-width: 200px;
+	min-width: 170px;
 }
 .location {
 	display: block;
 }
 
 .scraperimage{
-	border-radius: 1%;
 	max-width: 190px !important; 
-	min-width: 190px !important;
+/* 	min-width: 100px !important; */
+	max-height: 130px !important;
+}
+
+.caption a {
+	color: #333 !important;
+}
+
+.caption a:hover {
+	color: grey !important;
+	text-decoration: none;
 }
 
 .thumbnail {
-	min-width: 200px !important;
-	max-width: 200px !important;
+	min-width: 170px !important;
+	max-width: 250px !important;
 	min-height: 400px !important;
 	max-height: 400px !important;
+	border-radius: 0 !important;
 }
 
 div#oaklandevents div.col-md-7 {
