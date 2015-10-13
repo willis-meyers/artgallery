@@ -1,6 +1,8 @@
 body {
 	font-family: Helvetica;
 }
+
+}
 .results {
 	width: 100%;
 }
@@ -9,7 +11,6 @@ body {
 display: inline-block;
 float: left;
 width: 20%;
-min-width: 250px;
 padding-left: 50px;
 padding-top: 30px;
 }
@@ -22,10 +23,17 @@ padding-top: 30px;
 	display: block;
 }
 
-div.event_instance img {
+.scraperimage{
 	border-radius: 1%;
-	width: 100%;
-	min-width: 200px;
+	max-width: 190px !important; 
+	min-width: 190px !important;
+}
+
+.thumbnail {
+	min-width: 200px !important;
+	max-width: 200px !important;
+	min-height: 400px !important;
+	max-height: 400px !important;
 }
 
 div#oaklandevents div.col-md-7 {
