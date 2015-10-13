@@ -55,6 +55,7 @@ li{
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
+  background-color: rgba(255, 255, 255, .9);
 }
 .navbar-wrapper .navbar .container {
   width: auto;
