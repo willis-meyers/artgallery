@@ -25,9 +25,14 @@ padding-top: 30px;
 }
 
 .scraperimage{
+	object-fit: cover;
+	-o-object-fit: cover;
 	max-width: 190px !important; 
-/* 	min-width: 100px !important; */
-	max-height: 130px !important;
+	max-height: 190px !important;
+	width:auto !important;
+	height:auto !important;
+	min-height: 190px !important;
+	min-width: 190px !important;
 }
 
 .caption a {
