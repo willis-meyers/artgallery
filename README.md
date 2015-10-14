@@ -20,5 +20,5 @@
 - ARCHIVE: http://michaelsoriano.com/next-and-previous-buttons-bootstrap-photo-gallery/
 - SLIDER: http://jsfiddle.net/EjZzs/15/
 - SCRAPE: Oakland Art events at http://oaklandartmurmur.org/exhibitions/, jquery and https://import.io (transforms website into a JSON API).
-- CONTACT: formspree.io - with spam honeypot and redirect to contact page + onclick event https://api.jquery.com/submit/
+- CONTACT: formspree.io - with spam honeypot and redirect to contact page + onclick event https://api.jquery.com/submit/ and a better confirmation http://t4t5.github.io/sweetalert/
 - Font Awesome for fonts and icons: https://fortawesome.github.io/Font-Awesome/
