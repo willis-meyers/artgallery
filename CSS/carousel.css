@@ -8,14 +8,6 @@ body {
   
 }
 
-/*body {
-  background: black;
-}
-
-
- 
-
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -54,7 +46,7 @@ body {
 -------------------------------------------------- */
     .google-maps {
         position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
+        padding-bottom: 75%; 
         height: 0;
         overflow: hidden;
     }
@@ -187,66 +179,4 @@ body {
   }
 }
 
-@media (min-width: 414px){
- 
-
-}
-/* Willis removing floating nav bar
--------------------------------------------------- 
-
-@media (min-width: 768px) {
-  /* Navbar positioning foo 
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-/* The navbar becomes detached from the top, so we round the corners 
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-End
--------------------------------------------------- */
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- 
-
-/* Carousel base class 
-
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-
-}
-/* Since positioning the image, we need to help out the caption 
-.carousel-caption {
-  z-index: 10;
-  text-align: left;
-  margin-left: 0;
-  padding-left: 0;
-  color: #333;
-}
-
-/* Declare heights because of positioning of img element 
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner .item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  max-width: none;
-  height: 500px;
-
-}
 
