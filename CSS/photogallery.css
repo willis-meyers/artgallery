@@ -1,7 +1,9 @@
+
 ul {         
           padding:0 0 0 0;
           margin:0 0 0 0;
       }
+
       #archive ul li {     
           list-style:none;
           margin-bottom:25px;           
@@ -11,6 +13,7 @@ ul {
       }
       .modal-body {
           padding:5px !important;
+
       }
       .modal-content {
           border-radius:0;
@@ -18,15 +21,16 @@ ul {
       .modal-dialog img {
           text-align:center;
           margin:0 auto;
+        
       }
-    #archive .controls{          
+      #archive .controls{          
         width:50px;
         display:block;
         font-size:11px;
         padding-top:8px;
         font-weight:bold;          
     }
-    #archive .next {
+      #archive .next {
         float:right;
         text-align:right;
     }

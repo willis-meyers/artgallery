@@ -22,6 +22,7 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script> 
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="node_modules/sweetalert/dist/sweetalert.css">
    
 
     </head>
@@ -43,7 +44,7 @@
               <a class="navbar-brand" href="index.html">Aggregate Space Gallery</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav navbar-right">
                 <li><a href=""></a></li>
                 <li><a href="index.html#archive">Archive</a></li>
                 <li><a href="index.html#oaklandevents">Oakland Events</a></li>
@@ -74,7 +75,7 @@
   <div class="col-sm-4">
     <div class="contactmain">
 
-    <form action="http://formspree.io/info@aggregatespace.com"method="POST">  
+    <form id="submittest" action="http://formspree.io/info@aggregatespace.com"method="POST">  
              <form>
               <p class="name">
               <label for="name">Contact Us</label> 
@@ -90,9 +91,11 @@
               <p class="message"> 
                 <label for="message"></label>
                 <textarea name="text" placeholder= "Message" required></textarea > 
+                <input type="text" name="_gotcha" style="display:none">
               </p>  
               <p class="submit"> 
-                <input type="submit" value="Send"  /> 
+                <input type="submit" value="Send">
+                 <input type="hidden" name="_next" value="//aggregatespace.com/hackbright/contact.html" /> 
               </p>  
     
               </form>
@@ -132,6 +135,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="node_modules/sweetalert/dist/sweetalert.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+        $("#submittest").submit(function(){
+          swal("All set! Thanks.");
+          });
+        });
+    </script>
     
   </body>
 </html>
